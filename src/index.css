@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Objective-bold";
+  src: url("/fonts/Objective-bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+   font-family: "Objective", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+.text-outline{
+   -webkit-text-stroke: 1px white; /* 境目の太さと色 */
+  text-stroke: 1px white;
+}
+
+
+

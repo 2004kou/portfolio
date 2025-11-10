@@ -1,0 +1,45 @@
+.cp_arrows {
+  position: relative;
+  display: flex;
+  width: 60px;
+  height: 100px;/*画面いっぱいにする場合100vh*/
+  justify-content: center;
+  align-items: center;
+}
+.cp_arrows .cp_arrow {/*矢印を配置するベースの設定*/
+  position: absolute;
+  top: 50%;/*着地点(cp_arrowsの高さの50%)*/
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 10px;
+  opacity: 0;
+}
+.cp_arrows .cp_arrow:first-child {
+  animation: arrow-move08 2s ease-in-out infinite;
+}
+.cp_arrows .cp_arrow:nth-child(2)  {
+  animation: arrow-move08 2s 1s ease-in-out infinite;
+}
+.cp_arrows .cp_arrow:before,
+.cp_arrows .cp_arrow:after {/*矢印全体の設定*/
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 30px;
+  height: 3px;
+  background: white;
+}
+.cp_arrows .cp_arrow:before {/*矢印左の線の位置と傾斜*/
+  left: 3px;
+  transform: rotate(30deg);
+}
+.cp_arrows .cp_arrow:after {/*矢印左の線の位置と傾斜*/
+  right: 3px;
+  transform: rotate(-30deg);
+}
+@keyframes arrow-move08 {
+    0% { opacity: 0; top: 40%;/*スタート地点(cp_arrowsの高さの40%)*/}
+   70% { opacity: 1;}
+  100% { opacity: 0;}
+}

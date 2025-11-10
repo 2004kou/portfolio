@@ -1,0 +1,17 @@
+.fluffy {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+
+  animation: fluffy 3s infinite;
+  
+}
+
+@keyframes fluffy {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
