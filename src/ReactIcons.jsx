@@ -1,34 +1,69 @@
-import { IconContext } from 'react-icons'
-import { FaPython } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiFlask } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { IconContext } from 'react-icons';
+import { FaPython, FaHtml5, FaCss3 } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
+import { SiFlask } from 'react-icons/si';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { SiMysql } from 'react-icons/si';
 
-    const ReactIcons = () =>{
-    return(
-    <div className='block w-3/5'>
-    <h3 className='text-white !font-semibold !text-[40px] !mb-[30px]'>Languages</h3>
-        <IconContext.Provider value={{ size:30, color:"#ffffffff"}}>
-            <ul className="w-3/5 text-left flex">
-                <li className="text-white flex !w-[150px] h-[60px] justify-center items-center border border-white rounded-full shadow-[0_0_20px_white] !pl-[20px] !pr-[20px] !mr-[20px]"><FaHtml5 />HTML</li>
-                <li className="text-white flex !w-[150px] h-[60px] justify-center items-center border border-white rounded-full shadow-[0_0_20px_white] !pl-[20px] !pr-[20px] !mr-[20px]"> <FaCss3 />CSS</li>
-                <li className="text-white flex !w-[150px] h-[60px] justify-center items-center border border-white rounded-full shadow-[0_0_20px_white] !pl-[20px] !pr-[20px] !mr-[20px]"><FaPython/>Python</li>
-                <li className="text-white flex !w-[150px] h-[60px] justify-center items-center border border-white rounded-full shadow-[0_0_20px_white] !pl-[20px] !pr-[20px]"><IoLogoJavascript />JavaScript</li>
-            </ul>
-        </IconContext.Provider>
-    <h3 className='text-white !font-semibold !text-[40px] !mt-[30px]
-    !mb-[20px]'>Frameworks</h3>
-        <IconContext.Provider value={{ size:30, color:"#ffffffff"}}>
-            <ul className="w-3/5 text-left flex">
-                <li className="text-white flex !w-[150px] h-[60px] justify-center items-center border border-white rounded-full shadow-[0_0_20px_white] !pl-[20px] !pr-[20px] !mr-[20px]"><SiFlask />Flask</li>
-                <li className="text-white flex !w-[150px] h-[60px] justify-center items-center border border-white rounded-full shadow-[0_0_20px_white] !pl-[20px] !pr-[20px]"><RiTailwindCssFill />Tailwind CSS</li>
-            </ul>
-        </IconContext.Provider>
+const ReactIcons = () => {
+  return (
+    <div className="block w-3/5">
+      {/* Languages */}
+      <h3 className="text-white !text-[48px] font-extrabold mb-6 tracking-wide border-b-4 border-blue-500 inline-block pb-2">
+        Languages
+      </h3>
+      <IconContext.Provider value={{ size: 40, color: "#ffffff" }}>
+        <ul className="flex flex-col gap-4 !mt-4">
+          <li className="text-white flex items-center text-lg">
+            <FaHtml5 className="mr-3 text-orange-500" />
+            HTML（静的ページを一通り作成可能）
+          </li>
+          <li className="text-white flex items-center text-lg">
+            <FaCss3 className="mr-3 text-blue-400" />
+            CSS（スタイル調整とレスポンシブ対応）
+          </li>
+          <li className="text-white flex items-center text-lg">
+            <FaPython className="mr-3 text-yellow-400" />
+            Python（FlaskでWebアプリ実装）
+          </li>
+          <li className="text-white flex items-center text-lg">
+            <IoLogoJavascript className="mr-3 text-yellow-300" />
+            JavaScript（DOM操作と簡単なUI実装）
+          </li>
+        </ul>
+      </IconContext.Provider>
+
+      {/* Frameworks */}
+      <h3 className="text-white !text-[48px] font-extrabold !mt-12 !mb-6 tracking-wide border-b-4 border-green-500 inline-block pb-2">
+        Frameworks
+      </h3>
+      <IconContext.Provider value={{ size: 40, color: "#ffffff" }}>
+        <ul className="flex flex-col gap-4 !mt-4">
+          <li className="text-white flex items-center text-lg">
+            <SiFlask className="mr-3 text-gray-300" />
+            Flask（認証 / ルーティング / DB連携）
+          </li>
+          <li className="text-white flex items-center text-lg">
+            <RiTailwindCssFill className="mr-3 text-teal-400" />
+            Tailwind CSS（コンポーネントベースのUI構築）
+          </li>
+        </ul>
+      </IconContext.Provider>
+
+      {/* Tools */}
+      <h3 className="text-white !text-[48px] font-extrabold !mt-12 !mb-6 tracking-wide border-b-4 border-purple-500 inline-block pb-2">
+        Tools
+      </h3>
+      <IconContext.Provider value={{ size: 40, color: "#ffffff" }}>
+        <ul className="flex flex-col gap-4 !mt-4">
+          <li className="text-white flex items-center text-lg">
+            <SiMysql className="mr-3 text-blue-500" />
+            MySQL（テーブル設計 / CRUD）
+          </li>
+        </ul>
+      </IconContext.Provider>
     </div>
-        
-    )
-}
+  );
+};
 
-export default ReactIcons
+export default ReactIcons;

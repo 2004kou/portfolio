@@ -1,33 +1,92 @@
-import { IconContext } from 'react-icons'
-import { FaPython } from "react-icons/fa";
-import { SiFlask } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
+function Work() {
+  return (
+    <div className="w-4/5 mx-auto mt-[600px]">
+      {/* タイトル */}
+      <p className="text-white text-[80px] font-bold leading-loose">My Work</p>
 
-function Work(){
-    return(
-       <div className='w-3/5 h-[500px] mx-auto mt-[600px]'>
-       <p className="text-white text-[80px] font-bold leading-loose">My Work</p>
-       <div className="flex border border-white rounded-md border-4 p-[60px]">
+      {/* コンテンツ枠 */}
+      <div className="flex border-4 border-white rounded-md p-[60px]">
+        {/* 左側：画像 */}
         <div>
-            <img className='h-[400px]' src="./image/mywork.jpg" alt="#" />
+          <img className="h-[400px]" src="./image/mywork.jpg" alt="My Work Screenshot" />
         </div>
-        <div className='w-3/5 ml-[60px]'>
-            <p className="text-white text-[40px] font-bold leading-loose">偏愛会議</p>
-             <IconContext.Provider value={{ size:30, color:"#ffffffff"}}>
-            <ul className="flex mt-[30px]">
-                <li className='border border-white rounded-full p-[10px] leading-loose'><FaPython/></li>
-                <li className="ml-[10px] text-white border border-white rounded-full p-[10px] leading-loose"><SiFlask /></li>
+
+        {/* 右側：説明 */}
+        <div className="w-3/5 ml-[60px] space-y-10">
+          {/* プロジェクト名 */}
+          <p className="text-white text-[40px] font-bold leading-loose">偏愛会議 - Chatアプリ</p>
+
+          {/* 担当範囲 */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">担当範囲</h3>
+            <ul className="list-disc list-inside space-y-1 text-gray-300">
+              <li>MySQLによるDB設計・接続管理</li>
+              <li>ユーザー認証機能</li>
+              <li>ジャンル検索機能</li>
+              <li>プロフィール編集、表示機能</li>
+              <li>ルーム消去機能</li>
+              <li>ランキング機能</li>
+              <li>レスポンシブ対応</li>
             </ul>
-            
-            <p className="text-white leading-loose mt-[60px]">本作品は、ハッカソンで5人チームとして開発を開始したチャットアプリです。私はFlaskを用いたバックエンド設計とデータベース構築を担当しました。ハッカソン終了後は、アプリを完成させるために個人で開発を継続し、機能改善やUI調整などを行いました。チームでの協働と個人での自主開発の両方を経験できたことが大きな学びとなりました。</p>
+          </div>
+
+          {/* 技術スタック */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">技術スタック</h3>
+            <div className="flex flex-wrap gap-3 text-sm text-gray-200">
+              <span className="bg-gray-800 px-3 py-1 rounded">Flask</span>
+              <span className="bg-gray-800 px-3 py-1 rounded">MySQL</span>
+              <span className="bg-gray-800 px-3 py-1 rounded">Docker</span>
+              <span className="bg-gray-800 px-3 py-1 rounded">Git</span>
+            </div>
+          </div>
+
+          {/* 工夫した点 */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">工夫した点</h3>
+            <p className="text-gray-300 leading-relaxed">
+            安定したアプリ運用のために接続プールを用いたDB接続管理を実装し、
+            セッション制御も明確化することで通信エラーの発生を抑えました。
+            また、Blueprintを用いたルーティングとファイル分割によって
+            コードの保守性と可読性を向上させています。
+
+            さらに、主要機能についてテストコードを作成し、
+            リファクタリング時にも動作保証ができる開発体制を整えました。
+            </p>
+          </div>
+
+          {/* 問題と解決 */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">問題と解決</h3>
+            <p className="text-gray-300 leading-relaxed">
+              Docker環境でMySQLコンテナが起動しない問題に直面しましたが、
+              ログ解析とYAML構成の見直しにより、サービス名の衝突とボリューム設定の不備を特定・修正しました。
+            </p>
+          </div>
+
+
+          {/* チーム規模と期間 */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">チーム規模と期間</h3>
+            <p className="text-gray-300">
+              5人チーム（フロント2名 / バックエンド3名）でハッカソン期間中に開発開始。
+              以降は個人で継続開発し、約3か月で完成。
+            </p>
+          </div>
+          <div>
             <ul>
-                <li className="bg-gray-900 text-white px-5 py-2 rounded border border-gray-700 hover:bg-gray-800 hover:border-gray-600 shadow-none block mx-auto my-4 text-center"><a   href="http://57.181.26.155:55000/auth/signup">サイトへ</a></li>
-                <li className="bg-gray-900 text-white px-5 py-2 rounded border border-gray-700 hover:bg-gray-800 hover:border-gray-600 shadow-none block mx-auto my-4"><a  href="https://github.com/2004kou/myapp"><FaGithub className='mx-auto' /></a></li>
+                <li className="text-xl font-semibold text-white mb-2 border border-white text-white rounded-full px-6 py-3 
+               flex items-center justify-center 
+               transition-transform duration-200 hover:scale-105 "><a href="http://57.181.26.155:55000/auth/signup">サイトへ</a></li>
+                <li className="text-xl font-semibold text-white mb-2 border border-white text-white rounded-full px-6 py-3 
+               flex items-center justify-center 
+               transition-transform duration-200 hover:scale-105 "><a href="https://github.com/2004kou/myapp">Githubへ</a></li>
             </ul>
-            </IconContext.Provider>
+          </div>
         </div>
-       </div>
-       </div>
-    )
+      </div>
+    </div>
+  );
 }
-export default Work
+
+export default Work;
