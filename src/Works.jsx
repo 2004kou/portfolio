@@ -1,6 +1,7 @@
 import { IconContext } from 'react-icons'
 import { FaPython } from "react-icons/fa";
 import { SiFlask } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 function Work(){
     return(
@@ -17,8 +18,13 @@ function Work(){
                 <li className='border border-white rounded-full p-[10px] leading-loose'><FaPython/></li>
                 <li className="ml-[10px] text-white border border-white rounded-full p-[10px] leading-loose"><SiFlask /></li>
             </ul>
-            </IconContext.Provider>
+            
             <p className="text-white leading-loose mt-[60px]">本作品は、ハッカソンで5人チームとして開発を開始したチャットアプリです。私はFlaskを用いたバックエンド設計とデータベース構築を担当しました。ハッカソン終了後は、アプリを完成させるために個人で開発を継続し、機能改善やUI調整などを行いました。チームでの協働と個人での自主開発の両方を経験できたことが大きな学びとなりました。</p>
+            <ul>
+                <li className="bg-gray-900 text-white px-5 py-2 rounded border border-gray-700 hover:bg-gray-800 hover:border-gray-600 shadow-none block mx-auto my-4 text-center"><a   href="http://57.181.26.155:55000/auth/signup">サイトへ</a></li>
+                <li className="bg-gray-900 text-white px-5 py-2 rounded border border-gray-700 hover:bg-gray-800 hover:border-gray-600 shadow-none block mx-auto my-4"><a  href="https://github.com/2004kou/myapp"><FaGithub className='mx-auto' /></a></li>
+            </ul>
+            </IconContext.Provider>
         </div>
        </div>
        </div>
