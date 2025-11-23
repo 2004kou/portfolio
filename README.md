@@ -51,6 +51,7 @@
 ```bash
 git clone https://github.com/2004kou/portfolio.git
 cd portfolio
+npm install
 npm run dev
 
 # リポジトリをクローン
