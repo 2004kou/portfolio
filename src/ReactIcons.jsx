@@ -7,13 +7,13 @@ import { SiMysql } from 'react-icons/si';
 
 const ReactIcons = () => {
   return (
-    <div className="block w-3/5">
+    <div className="block w-4/5 text-center md:text-left mx-auto">
       {/* Languages */}
       <h3 className="text-white !text-[48px] font-extrabold mb-6 tracking-wide border-b-4 border-blue-500 inline-block pb-2">
         Languages
       </h3>
       <IconContext.Provider value={{ size: 40, color: "#ffffff" }}>
-        <ul className="flex flex-col gap-4 !mt-4">
+        <ul className="flex flex-col gap-4 !mt-4 text-center md:text-left">
           <li className="text-white flex items-center text-lg">
             <FaHtml5 className="mr-3 text-orange-500" />
             HTML（静的ページを一通り作成可能）

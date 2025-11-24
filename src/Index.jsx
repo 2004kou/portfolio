@@ -6,21 +6,21 @@ import Work from "./Works";
 
 function Index(){
     return(
-        <main className="bg-black">
+        <main className="bg-black w-4/5 md:w-5/5 mx-auto">
         <div className="w-full mx-auto">
            <div className="adovanced">
            </div>
                 <div className="bg-black">
             <Work />
            </div>
-                      <div className="flex !mt-[800px]">  
+                      <div className="md:flex !mt-[300px] text-center md:text-left">  
                 <div className="relative ">
-                    <h2 className="!text-[80px] !font-black text-white mt-[150px] absolute top-5 left-30 z-[999]">Skills</h2>
-                    <img className="pb-[250px] !w-3/5 h-fit relative" src="./image/power.jpg" alt="写真"/>
+                    <h2 className="!text-[80px] !font-black text-white mt-[150px] md:absolute md:top-5 md:left-30 md:z-[999]">Skills</h2>
+                    <img className="pb-[250px] !w-3/5 h-fit relative hidden md:block" src="./image/power.jpg" alt="写真"/>
                 </div>
                 <ReactIcons/>              
            </div>
-           <div className="ml-[80px]  mt-[1000px]">
+           <div className="md:ml-[80px]  mt-[200px] w-4/5 mx-auto">
                 <AboutMe></AboutMe>
            </div>
 

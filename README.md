@@ -12,9 +12,10 @@
 
 ## 🧩 Site Structure / サイト構成
 1. **My Work**
+   <img className="h-[400px]" src="./image/mywork.jpg" alt="My Work Screenshot" />
    - 実際に開発したチャットアプリ紹介
    - 役割、使用技術、工夫点を明確化
-   - 掲載しているデモサイトリンク　　http://57.181.26.155:55000/auth/signup
+   - 掲載しているデモサイトリンク　　http://35.77.104.142:55000/auth/signup
 
 2. **Skills**
    - *使える技術だけでなく「どの程度使えるか」を整理*

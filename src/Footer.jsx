@@ -1,7 +1,7 @@
 function Footer(){
     return(
        <>
-       <div className=" mt-[600px] w-4/5 mx-auto p-[60px] pb-[300px]">
+       <div className="w-5/5 md:w-4/5 mx-auto md:p-[60px] md:pb-[300px] mt-[500px] md:mt-[0] pb-[60px]">
             <p className="text-white leading-loose underline">最後までポートフォリオをご覧いただき、誠にありがとうございます。
 
 本制作を通じて、チーム開発の協調性やバックエンド設計の奥深さ、そしてものづくりの楽しさを実感することができました。特にFlaskを用いたAPI設計やMySQLによるデータベース構築では、ユーザーが安心して利用できるサービスを支える“基盤づくり”の重要性を深く学ぶことができました。エラーの原因を一つひとつ丁寧に追いかけ、動作確認を重ねながら仕組みを理解していく過程は、技術的な成長だけでなく粘り強さや論理的思考力も養う貴重な経験となりました。
