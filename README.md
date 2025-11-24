@@ -12,7 +12,7 @@
 
 ## 🧩 Site Structure / サイト構成
 1. **My Work**
-   ![説明文](public\image\mywork.jpg)
+   ![偏愛会議写真](public/image/mywork.jpg)
    - 実際に開発したチャットアプリ紹介
    - 役割、使用技術、工夫点を明確化
    - 掲載しているデモサイトリンク　　http://35.77.104.142:55000/auth/signup

@@ -1,5 +1,5 @@
 import Arrow from "./Arrow"
-import Float from "./float"
+import Float from "./Float"
 
 
 function Header(){
