@@ -5,7 +5,7 @@ function AboutMe(){
        <div className="md:flex w-full h-[900px] md:h-[600px]">
          
         <div className="w-full">  
-                    <div className="w-4/5 md:ml-[60px] mb-[30px] mx-auto">
+                    <div className="md:w-4/5 md:ml-[60px] mb-[30px] mx-auto w-5/5">
                         <dl className="flex md:leading-loose items-center leading-snug">
                             <dt className="text-white md:text-[40px] font-bold opacity-50 text-[30px]">名前</dt>
                             <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[20px]">井上高</dd>
@@ -18,9 +18,9 @@ function AboutMe(){
                             <dt className="text-white md:text-[40px] font-bold opacity-50 text-[30px]">出身</dt>
                             <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[20px]">兵庫県</dd>
                         </dl>
-                        <dl className="md:flex md:leading-loose items-center leading-snug">
+                        <dl className="flex md:leading-loose items-center leading-snug">
                             <dt className="text-white md:text-[40px] font-bold opacity-50 text-[30px]">大学</dt>
-                            <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[20px]">甲南大学経済学部経済学科</dd>
+                            <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[15px] whitespace-nowrap">甲南大学経済学部経済学科</dd>
                         </dl>
                     </div>
         </div>
