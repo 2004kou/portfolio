@@ -2,7 +2,7 @@ function AboutMe(){
     return(
        <>
         <p className="text-white md:text-[60px] md:leading-relaxed   font-bold  !text-[50px]">About Me</p>
-       <div className="md:flex w-full h-[1000px] ">
+       <div className="md:flex w-full h-[900px] md:h-[600px]">
          
         <div className="w-full">  
                     <div className="w-4/5 md:ml-[60px] mb-[30px] mx-auto">
@@ -31,7 +31,7 @@ function AboutMe(){
                     <img className=" w-[200px] h-[200px] object-cover border border-white rounded-full shadow-[0_0_20px_white] !mb-[10px] !mx-auto" src="./image/drone.png" alt="#" />
                     <p className="text-white md:text-[30px] text-center !mb-[30px] md:mb-[0px] text-[20px]">ドローン撮影</p>
                 </li>
-                <li className="md:ml-[60px]">
+                <li className="md:ml-[60px] ">
                     <img className="w-[200px] h-[200px] object-cover border border-white rounded-full shadow-[0_0_20px_white] !mb-[10px] !mx-auto" src="./image/golf.jpg" alt="#" />
                     <p className="text-white md:text-[30px] text-center !mb-[60px] md:mb-[0px] text-[20px]">ゴルフ</p>
                 </li>
