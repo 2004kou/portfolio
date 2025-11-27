@@ -2,7 +2,7 @@ function Work() {
   return (
     <div className="w-4/5 mx-auto mt-[300px] text-center md:text-left">
       {/* タイトル */}
-      <p className="text-[55px] text-white md:text-[80px] font-bold md:leading-loose leading-snug whitespace-nowrap text-center">My Work</p>
+      <p className="text-[50px] text-white md:text-[80px] font-bold md:leading-loose leading-snug whitespace-nowrap text-center inline-block w-auto">My Work</p>
 
       {/* コンテンツ枠 */}
       <div className="md:flex md:border-4 md:border-white md:rounded-md md:p-[60px]">

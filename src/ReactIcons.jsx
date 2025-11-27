@@ -34,11 +34,11 @@ const ReactIcons = () => {
       </IconContext.Provider>
 
       {/* Frameworks */}
-      <h3 className="text-white !text-[48px] font-extrabold !mt-12 !mb-6 tracking-wide border-b-4 border-green-500 inline-block pb-2">
+      <h3 className="text-white !text-[40px] font-extrabold !mt-12 !mb-6 tracking-wide border-b-4 border-green-500  pb-2 inline-block w-auto">
         Frameworks
       </h3>
       <IconContext.Provider value={{ size: 40, color: "#ffffff" }}>
-        <ul className="flex flex-col gap-4 !mt-4">
+        <ul className="flex flex-col gap-4 !mt-4 text-center">
           <li className="text-white flex items-center text-lg">
             <SiFlask className="mr-3 text-gray-300 leading-relaxed" />
             Flask（認証 / ルーティング / DB連携）
@@ -55,7 +55,7 @@ const ReactIcons = () => {
         Tools
       </h3>
       <IconContext.Provider value={{ size: 40, color: "#ffffff" }}>
-        <ul className="flex flex-col gap-4 !mt-4">
+        <ul className="flex flex-col gap-4 !mt-4 text-center">
           <li className="text-white flex items-center text-lg leading-relaxed">
             <SiMysql className="mr-3 text-blue-500" />
             MySQL（テーブル設計 / CRUD）
