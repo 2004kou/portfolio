@@ -2,7 +2,7 @@ function Work() {
   return (
     <div className="w-4/5 mx-auto mt-[300px] text-center md:text-left">
       {/* タイトル */}
-      <p className="text-[60px] text-white md:text-[80px] font-bold leading-loose">My Work</p>
+      <p className="text-[60px] text-white md:text-[80px] font-bold md:leading-loose leading-snug whitespace-nowrap">My Work</p>
 
       {/* コンテンツ枠 */}
       <div className="md:flex md:border-4 md:border-white md:rounded-md md:p-[60px]">
@@ -14,14 +14,14 @@ function Work() {
         {/* 右側：説明 */}
         <div className=" ml-[0px] md:w-2/5 md:ml-[60px] space-y-10 text-center w-5/5 !mx-auto">
           {/* プロジェクト名 */}
-          <p className="text-white text-[40px] font-bold leading-loose">偏愛会議</p>
-          <p className="text-gray-300 leading-relaxed !mt-2 !mb-5 md:!ml-[20px]">「偏愛会議」は、趣味や関心の近いユーザー同士が集まり,
+          <p className="text-white text-[30px] font-bold leading-loose">偏愛会議</p>
+          <p className="text-gray-300 leading-relaxed !mt-2 !mb-5 md:!ml-[20px] ">「偏愛会議」は、趣味や関心の近いユーザー同士が集まり,
             会話ができるチャットアプリです。ジャンル別のルームを通じて同好のユーザーと交流できるほか、趣味がはっきりしないユーザーでも、自分と似た思考傾向を持つ人々の多いジャンルを探索できる機能を搭載しています。単なるチャットではなく、“興味の再発見”と“つながりのきっかけ”を生むコミュニケーション体験を目指しました。</p>
 
           {/* 担当範囲 */}
           <div>
             <h3 className="!text-xl font-semibold text-white !mb-2 md:text-left">担当範囲</h3>
-            <ul className="list-disc list-inside space-y-1 text-gray-300 md:text-left md:!ml-[20px]">
+            <ul className="list-disc list-inside space-y-1 text-gray-300 md:text-left md:!ml-[20px] md:leading-relaxed">
               <li>MySQLによるDB設計・接続管理</li>
               <li>ユーザー認証機能</li>
               <li>ジャンル検索機能</li>
@@ -35,7 +35,7 @@ function Work() {
           {/* 技術スタック */}
           <div>
             <h3 className="!text-xl font-semibold text-white !mb-2 md:text-left">技術スタック</h3>
-            <div className="flex flex-wrap gap-3 text-sm text-gray-200 !pl-[20px] md:!ml-[20px]">
+            <div className="flex flex-wrap gap-3 text-sm text-gray-200 !pl-[40px] md:!ml-[20px]">
               <span className="bg-gray-800 px-3 py-1 rounded">Flask</span>
               <span className="bg-gray-800 px-3 py-1 rounded">MySQL</span>
               <span className="bg-gray-800 px-3 py-1 rounded">Docker</span>
@@ -46,7 +46,7 @@ function Work() {
           {/* 工夫した点 */}
           <div>
             <h3 className="!text-xl font-semibold text-white !mb-2 md:text-left">工夫した点</h3>
-            <p className="text-gray-300 leading-relaxed md:text-left md:!ml-[20px]">
+            <p className="text-gray-300 leading-relaxed md:text-left md:!ml-[20px] ">
             安定したアプリ運用のために接続プールを用いたDB接続管理を実装し、
             セッション制御も明確化することで通信エラーの発生を抑えました。
             また、Blueprintを用いたルーティングとファイル分割によって
@@ -70,7 +70,7 @@ function Work() {
           {/* チーム規模と期間 */}
           <div>
             <h3 className="!text-xl font-semibold text-white !mb-2 md:text-left">チーム規模と期間</h3>
-            <p className="text-gray-300 md:text-left md:!ml-[20px]">
+            <p className="text-gray-300 md:text-left md:!ml-[20px] leading-relaxed">
               5人チーム（フロント2名 / バックエンド3名）でハッカソン期間中に開発開始。
               以降は個人で継続開発し、約3か月で完成。
             </p>
