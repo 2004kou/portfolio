@@ -2,13 +2,13 @@ function Work() {
   return (
     <div className="w-4/5 mx-auto mt-[300px] text-center md:text-left">
       {/* タイトル */}
-      <p className="text-[60px] text-white md:text-[80px] font-bold md:leading-loose leading-snug whitespace-nowrap">My Work</p>
+      <p className="text-[55px] text-white md:text-[80px] font-bold md:leading-loose leading-snug whitespace-nowrap text-center">My Work</p>
 
       {/* コンテンツ枠 */}
       <div className="md:flex md:border-4 md:border-white md:rounded-md md:p-[60px]">
         {/* 左側：画像 */}
         <div>
-          <img className="h-[400px]" src="./image/mywork.jpg" alt="My Work Screenshot" />
+          <img className="h-[400px] mx-auto" src="./image/mywork.jpg" alt="My Work Screenshot" />
         </div>
 
         {/* 右側：説明 */}
