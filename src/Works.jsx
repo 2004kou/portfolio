@@ -1,6 +1,6 @@
 function Work() {
   return (
-    <div className="w-4/5 mx-auto mt-[300px] text-center md:text-left">
+    <div className="md:w-4/5 mx-auto md:mt-[300px] text-center md:text-left  w-5/5 !mt-[100px]">
       {/* タイトル */}
       <p className="text-[50px] text-white md:text-[80px] font-bold md:leading-loose leading-snug whitespace-nowrap text-center inline-block w-auto">My Work</p>
 
