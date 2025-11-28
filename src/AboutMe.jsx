@@ -7,20 +7,20 @@ function AboutMe(){
         <div className="w-full">  
                     <div className="md:w-4/5 md:ml-[60px] mb-[30px] mx-auto w-5/5">
                         <dl className="flex md:leading-loose items-center leading-snug">
-                            <dt className="text-white md:text-[40px] font-bold opacity-50 text-[30px]">名前</dt>
+                            <dt className="text-white md:text-[30px] font-bold opacity-50 text-[25px]">名前</dt>
                             <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[20px]">井上高</dd>
                         </dl>
                         <dl className="flex md:leading-loose items-center leading-snug">
-                            <dt className="text-white md:text-[40px] font-bold opacity-50 text-[30px]">年齢</dt>
+                            <dt className="text-white md:text-[30px] font-bold opacity-50 text-[25px]">年齢</dt>
                             <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[20px]">21</dd>
                         </dl>
                         <dl className="flex md:leading-loose items-center leading-snug">
-                            <dt className="text-white md:text-[40px] font-bold opacity-50 text-[30px]">出身</dt>
+                            <dt className="text-white md:text-[30px] font-bold opacity-50 text-[25px]">出身</dt>
                             <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[20px]">兵庫県</dd>
                         </dl>
                         <dl className="flex md:leading-loose items-center leading-snug">
-                            <dt className="text-white md:text-[40px] font-bold opacity-50 text-[30px]">大学</dt>
-                            <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[15px] whitespace-nowrap">甲南大学経済学部経済学科</dd>
+                            <dt className="text-white md:text-[30px] font-bold opacity-50 text-[25px] whitespace-nowrap">大学</dt>
+                            <dd className="text-white font-bold md:text-[30px] pl-[30px] text-[20px] whitespace-nowrap">甲南大学経済学部経済学科</dd>
                         </dl>
                     </div>
         </div>

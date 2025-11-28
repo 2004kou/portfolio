@@ -6,7 +6,7 @@ import Work from "./Works";
 
 function Index(){
     return(
-        <main className="bg-black w-4/5 md:w-5/5 mx-auto">
+        <main className="bg-black  w-5/5 mx-auto px-2">
         <div className="w-full mx-auto">
            <div className="adovanced">
            </div>
@@ -20,7 +20,7 @@ function Index(){
                 </div>
                 <ReactIcons/>              
            </div>
-           <div className="md:ml-[80px]  md:mt-[200px] md:w-4/5 mx-auto w-5/5 !mt-[100px]">
+           <div className="md:ml-[80px]  md:mt-[200px] md:w-4/5 mx-auto w-5/5 !mt-[100px] px-2">
                 <AboutMe></AboutMe>
            </div>
 
