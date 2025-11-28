@@ -36,8 +36,6 @@ body {
    -webkit-text-stroke: 1px white; /* 境目の太さと色 */
   text-stroke: 1px white;
 }
-* {
-  outline: 1px solid red !important;
-}
+
 
 
